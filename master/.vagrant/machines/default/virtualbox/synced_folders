@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/Users/terfno/Documents/git/k8s_prac/master","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
