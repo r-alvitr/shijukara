@@ -2,9 +2,14 @@
 k8sのmaster用のVMをvagrant+virtualboxで建設してみる。
 
 * ホストOS:CentOS7
+* wishlist
+  * docker
+  * vim
+  * kubectl
 
 ## setup
 参考: https://qiita.com/inakadegaebal/items/be9fecce813cebec5986
+
 ```bash
 $ vagrant up
 $ vagrant ssh
