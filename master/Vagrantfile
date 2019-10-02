@@ -1,8 +1,12 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
+  vm_name = "master"
   config.vm.provider "virtualbox" do |v|
     v.customize ["modifyvm", :id, "--ostype", "Ubuntu_64"]
   end
-  config.vm.synced_folder "./sync", "/home/vagrant/sync"
+  config.vm.provision "shell" do |s|
+    s.inline = "groupadd -f docker"
+  end
   config.vm.provision "docker"
+  config.vm.synced_folder "./sync", "/home/vagrant/sync"
 end
